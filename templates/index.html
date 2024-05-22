@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="Submit" href="success.html">
+    <title>Please rate your service</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../static/logo.png" alt="logo" class="logo" />
+      <!--...{% if message %}
+      <p class="message">{{ message | safe }}</p>
+      {% endif %}..-->
+      <form action="/submit" method="POST">
+        <div class="form-group">
+          <h3>Student Name</h3>
+          <input
+            type="text"
+            name="Student"
+            placeholder="Name of Student"
+          />  </div>
+          <div class="std_id">
+            <h3>Student_id</h3>
+            <input
+              type="text"
+              name="Student_id"
+              placeholder="Student_id"
+            />  </div>
+          <div class="sub">
+            <h3>Subject Name<h3>
+                <select name="Subject">
+                    <option value="">Select Subject</option>
+                    <option value="Linux and cloud computing">Linux and cloud computing</option>
+                    <option value="Java with OOPS">Java with OOPS</option>
+                    <option value="Python">Python</option>
+                    <option value="Big Data Technology">Big Data Technology</option>
+                    <option value="Advanced Analytics Using Statics">Advanced Analytics Using Statics</option>
+                    <option value="R Programming">R Programming</option>
+                    <option value="Practical machine Learning">Practical machine Learning</option>
+                    <option value="Data Visualization">Data Visualization</option>
+              </select>
+        
+        </div>
+        <div class="form-group">
+          <h3>Faculty</h3>
+          <select name="Faculty">
+            <option value="">Select Faculty</option>
+            <option value="Vineeta Singh">Vineeta Singh</option>
+            <option value="Malkeet Singh">Malkeet Singh</option>
+            <option value="Amar Panchal">Amar Panchal</option>
+            <option value="Sandeep Agarwal">Sandeep Agarwal</option>
+            <option value="Sundeep Bharghav">Sundeep Bharghav</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h3>Please rate your Faculty</h3>
+          <input type="radio" name="rating" value="1" /> 1
+          <input type="radio" name="rating" value="2" /> 2
+          <input type="radio" name="rating" value="3" /> 3
+          <input type="radio" name="rating" value="4" /> 4
+          <input type="radio" name="rating" value="5" /> 5
+          <input type="radio" name="rating" value="6" /> 6
+          <input type="radio" name="rating" value="7" /> 7
+          <input type="radio" name="rating" value="8" /> 8
+          <input type="radio" name="rating" value="9" /> 9
+          <input type="radio" name="rating" value="10" checked /> 10
+        </div>
+        <div class="form-group">
+          <h3>Comments </h3>
+          <textarea
+            name="comments"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Tell us what you liked and/or did not like"
+          ></textarea>
+        </div>
+
+        <a href="success.html">
+        <input type="button" onclick="success.html" value="Submit"class="btn"></button></a>
+     </form>
+    </div>
+  </body>
+</html>
